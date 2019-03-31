@@ -10,6 +10,7 @@
         <h3 v-show="rangers.show">{{ rangers.speciality }}</h3>
       </li>
     </u>
+    <button v-on:click="deleteRanger">Delete</button>
   </div>
 </template>
 
@@ -22,9 +23,12 @@ export default {
     }
   },
   data() {
-    return {
-
-    };
+    return {};
+  },
+  methods: {
+    deleteRanger: function() {
+      this.ranger.pop()
+    }
   }
 };
 </script>
@@ -43,6 +47,7 @@ ul {
   list-style-type: none;
   padding: 0;
 }
+
 li {
   flex-grow: 1;
   flex-basis: 300px;
@@ -51,4 +56,5 @@ li {
   border: 1px solid #222;
   margin: 10px;
 }
+
 </style>

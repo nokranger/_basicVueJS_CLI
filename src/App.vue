@@ -1,8 +1,8 @@
 <template>
   <div>
-    <app-header></app-header>
+    <app-header v-bind:title="title"></app-header>
     <app-article v-bind:ranger="ranger"></app-article>
-    <app-footer></app-footer>
+    <app-footer v-bind:title="title"></app-footer>
   </div>
 </template>
 
@@ -49,7 +49,8 @@ export default {
           speciality: "Data Diggin",
           show: false
         }
-      ]
+      ],
+      title: "Vue Nok"
     };
   }
 };
