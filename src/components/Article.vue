@@ -1,11 +1,7 @@
 <template>
   <div id="ranger">
     <u>
-      <li
-        v-for="(rangers, index) in ranger"
-        :key="index"
-        v-on:click="rangers.show = !rangers.show"
-      >
+      <li v-for="(rangers, index) in ranger" :key="index" v-on:click="rangers.show = !rangers.show">
         <h2>{{ rangers.name }}</h2>
         <h3 v-show="rangers.show">{{ rangers.speciality }}</h3>
       </li>
@@ -19,7 +15,7 @@ export default {
   props: {
     ranger: {
       type: Array,
-      required: true,
+      required: true
     }
   },
   data() {
@@ -27,7 +23,7 @@ export default {
   },
   methods: {
     deleteRanger: function() {
-      this.ranger.pop()
+      this.ranger.pop();
     }
   }
 };
