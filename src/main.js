@@ -29,7 +29,7 @@ Vue.directive('theme', {
   }
 })
 
-//Fillters
+//Filters
 Vue.filter('to-uppercase', function(value){
   return value.toUpperCase()
 })
