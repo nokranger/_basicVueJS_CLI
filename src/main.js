@@ -2,11 +2,11 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
-
-export const bus = new Vue();
+import VueResource from "vue-resource";
 
 Vue.config.productionTip = false;
 // Vue.component("nok", Nokranger);
+Vue.use(VueResource);
 
 new Vue({
   router,
