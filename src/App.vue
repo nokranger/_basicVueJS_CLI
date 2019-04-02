@@ -1,6 +1,7 @@
 <template>
   <div>
     <show-blog></show-blog>
+    <list-blog></list-blog>
     <!-- <add-blog></add-blog> -->
     <!-- <keep-alive>
     <component v-bind:is="component"></component>
@@ -15,13 +16,15 @@ import formOne from './views/formOne.vue'
 import formTwo from './views/formTwo.vue'
 import AddBlog from './views/AddBlog.vue'
 import showBlog from './views/showBlog.vue'
+import listBlog from './views/listBlogs.vue'
 
 export default {
   components: {
     'form-one': formOne,
     'form-two': formTwo,
     'add-blog': AddBlog,
-    'show-blog': showBlog
+    'show-blog': showBlog,
+    'list-blog': listBlog
   },
   data() {
     return {
