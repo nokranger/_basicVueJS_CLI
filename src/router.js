@@ -3,6 +3,7 @@ import Router from "vue-router";
 // import Home from "./views/Home.vue";
 import showBlogs from "./views/showBlog.vue"
 import addBlog from "./views/AddBlog.vue"
+import singleBlog from "./views/singleBlog.vue"
 
 Vue.use(Router);
 
@@ -18,6 +19,10 @@ export default new Router({
     {
       path: '/add',
       component: addBlog
+    },
+    {
+      path: '/blog/:id',
+      component: singleBlog
     }
     // {
     //   path: "/add",
