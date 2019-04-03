@@ -1,7 +1,8 @@
 <template>
   <div>
-    <show-blog></show-blog>
-    <list-blog></list-blog>
+    <!-- <show-blog></show-blog>
+    <list-blog></list-blog> -->
+    <router-view></router-view>
     <!-- <add-blog></add-blog> -->
     <!-- <keep-alive>
     <component v-bind:is="component"></component>
