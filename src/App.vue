@@ -2,6 +2,7 @@
   <div>
     <!-- <show-blog></show-blog>
     <list-blog></list-blog> -->
+    <app-header></app-header>
     <router-view></router-view>
     <!-- <add-blog></add-blog> -->
     <!-- <keep-alive>
@@ -18,6 +19,7 @@ import formTwo from './views/formTwo.vue'
 import AddBlog from './views/AddBlog.vue'
 import showBlog from './views/showBlog.vue'
 import listBlog from './views/listBlogs.vue'
+import header from './components/Header.vue'
 
 export default {
   components: {
@@ -25,7 +27,8 @@ export default {
     'form-two': formTwo,
     'add-blog': AddBlog,
     'show-blog': showBlog,
-    'list-blog': listBlog
+    'list-blog': listBlog,
+    'app-header': header
   },
   data() {
     return {
